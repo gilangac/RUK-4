@@ -26,7 +26,8 @@ public class Main {
                     case 1:
                         System.out.println("\n=== Tambah Data Guru ===");
                         while (true) {
-                            Teacher teacher = new Teacher(); 
+                            @SuppressWarnings("unused")
+                            Teacher teacher = new Teacher("Pak guru", 20, "Matematika");  
                             teachers.add(teacher);
 
                             System.out.print("Tambah guru lagi? (y/n): ");
@@ -39,7 +40,7 @@ public class Main {
                     case 2:
                         System.out.println("\n=== Tambah Data Siswa ===");
                         while (true) {
-                            Student student = new Student();
+                            Student student = new Student("Siswa", 10, "IPA");
                             students.add(student);
 
                             System.out.print("Tambah siswa lagi? (y/n): ");
