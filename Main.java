@@ -26,7 +26,6 @@ public class Main {
                     case 1:
                         System.out.println("\n=== Tambah Data Guru ===");
                         while (true) {
-                            @SuppressWarnings("unused")
                             Teacher teacher = new Teacher("Pak guru", 20, "081234567890", "yNwXz@example.com", 180, 80, "Matematika");  
                             teachers.add(teacher);
 
