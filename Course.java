@@ -14,13 +14,6 @@ class Course {
         }
     }
 
-/*************  ✨ Codeium Command ⭐  *************/
-/**
- * Set the course name.
- *
- * @param courseName the name of the course
- */
-/******  97ba66a1-095f-401c-a4c9-a1a509a48b7a  *******/
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }

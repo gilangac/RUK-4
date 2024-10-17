@@ -2,7 +2,7 @@
 class Person {
     public String name;
     private int age;
-    private String address;
+    private Address address;
     private String phone;
     private String email;
     private int height;
@@ -21,8 +21,11 @@ class Person {
         System.out.println("Name: " + name + ", Age: " + age);
     }
 
-    // smell: Primitive Obsession
-    public void setAddress(String address){
+    public void setAddress(Address address) {
         this.address = address;
+    }
+
+    public Address getAddress(Address address){
+        return this.address;
     }
 }
