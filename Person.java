@@ -1,20 +1,19 @@
+import java.util.Scanner;
 
 class Person {
     public String name;
     private int age;
-    private String address;
 
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Person() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Masukkan nama: ");
+        this.name = scanner.nextLine();
+        System.out.print("Masukkan umur: ");
+        this.age = scanner.nextInt();
+        scanner.nextLine();
     }
 
     public void displayInfo() {
         System.out.println("Name: " + name + ", Age: " + age);
-    }
-
-    // smell: Primitive Obsession
-    public void setAddress(String address){
-        this.address = address;
     }
 }

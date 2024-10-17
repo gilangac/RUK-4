@@ -26,7 +26,11 @@ public class Main {
                     case 1:
                         System.out.println("\n=== Tambah Data Guru ===");
                         while (true) {
+<<<<<<< HEAD
                             Teacher teacher = new Teacher("Pak guru", 20, "081234567890", "yNwXz@example.com", 180, 80, "Matematika");  
+=======
+                            Teacher teacher = new Teacher(); 
+>>>>>>> parent of 210ddb2 (smell)
                             teachers.add(teacher);
 
                             System.out.print("Tambah guru lagi? (y/n): ");
@@ -39,7 +43,11 @@ public class Main {
                     case 2:
                         System.out.println("\n=== Tambah Data Siswa ===");
                         while (true) {
+<<<<<<< HEAD
                             Student student = new Student("Siswa", 10, "081234567890", "yNwXz@example.com", 180, 80, "IPA");
+=======
+                            Student student = new Student();
+>>>>>>> parent of 210ddb2 (smell)
                             students.add(student);
 
                             System.out.print("Tambah siswa lagi? (y/n): ");
