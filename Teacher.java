@@ -1,5 +1,7 @@
 
 class Teacher extends Person {
+    public String teacherName;
+    private int teacherAge;
     private String subject;
 
     public Teacher(String name, int age, String phone, String email, int height, int weight, String subject) {
@@ -9,7 +11,8 @@ class Teacher extends Person {
 
     @Override
     public void displayInfo() {
-        super.displayInfo();
-        System.out.println("Subject: " + subject);
+        System.out.println("Name: " + teacherName + ", Age: " + teacherAge + ", Subject" + subject);
+        // super.displayInfo();
+        // System.out.println("Subject: " + subject);
     }
 }
