@@ -1,18 +1,20 @@
 
 class Student extends Person {
-    public String studentName;
-    private int studentAge;
     private String major;
+    // data clumps
+    private String phone;
+    private String email;
+    private String height;
+    private String weight;
 
-    public Student(String name, int age, String phone, String email, int height, int weight, String major) {
-        super(name, age, phone, email, height, weight);
+    public Student(String name, int age, String major) {
+        super(name, age);
         this.major = major;
     }
 
     @Override
     public void displayInfo() {
-        System.out.println("Name: " + studentName + ", Age: " + studentAge + ", Major" + major);
-        // super.displayInfo();
-        // System.out.println("Major: " + major);
+        super.displayInfo();
+        System.out.println("Major: " + major);
     }
 }

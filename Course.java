@@ -14,24 +14,16 @@ class Course {
         }
     }
 
-    public void setCourseName(String courseName) {
+    // long method: karena set course, set teacher dsb
+    // bisa juga long parameter list karena parameternya sangat banyak
+    public void setCourse(String courseName, boolean isLabCourse, String teacherName, int teacherAge, String teacherSubject) {
         this.courseName = courseName;
-    }
-
-    public void setIsLabCourse(boolean isLabCourse) {
+        this.teacher = new Teacher(teacherName, teacherAge, teacherSubject);
         this.isLabCourse = isLabCourse;
-    }
 
-    public String getCourseName() {
-        return courseName;
-    }
-
-    public boolean getIsLabCourse() {
-        return isLabCourse;
-    }
-
-    public Teacher getTeacher() {
-        return teacher;
+        System.out.println("Course ini bernama: " + courseName);
+        System.out.println("Course ini diajar oleh: " + teacher.name);
+        System.out.println("Apakah diajar di lab? " + (isLabCourse ? "Ya" : "Tidak"));
     }
 
     public void displayCourseInfo() {

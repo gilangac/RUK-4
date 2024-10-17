@@ -1,18 +1,20 @@
 
 class Teacher extends Person {
-    public String teacherName;
-    private int teacherAge;
     private String subject;
+    // data clumps
+    private String phone;
+    private String email;
+    private String height;
+    private String weight;
 
-    public Teacher(String name, int age, String phone, String email, int height, int weight, String subject) {
-        super(name, age, phone, email, height, weight);
+    public Teacher(String name, int age, String subject) {
+        super(name, age);
         this.subject = subject;
     }
 
     @Override
     public void displayInfo() {
-        System.out.println("Name: " + teacherName + ", Age: " + teacherAge + ", Subject" + subject);
-        // super.displayInfo();
-        // System.out.println("Subject: " + subject);
+        super.displayInfo();
+        System.out.println("Subject: " + subject);
     }
 }
