@@ -14,6 +14,18 @@ class Course {
         }
     }
 
+    // long method: karena set course, set teacher dsb
+    // bisa juga long parameter list karena parameternya sangat banyak
+    public void setCourse(String courseName, boolean isLabCourse, String teacherName, int teacherAge, String teacherSubject) {
+        this.courseName = courseName;
+        this.teacher = new Teacher(teacherName, teacherAge, teacherSubject);
+        this.isLabCourse = isLabCourse;
+
+        System.out.println("Course ini bernama: " + courseName);
+        System.out.println("Course ini diajar oleh: " + teacher.name);
+        System.out.println("Apakah diajar di lab? " + (isLabCourse ? "Ya" : "Tidak"));
+    }
+
     public void displayCourseInfo() {
         System.out.println("Course: " + courseName);
         System.out.println("Taught by: " + teacher.name);

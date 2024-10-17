@@ -1,13 +1,15 @@
-import java.util.Scanner;
 
 class Teacher extends Person {
     private String subject;
+    // data clumps
+    private String phone;
+    private String email;
+    private String height;
+    private String weight;
 
-    public Teacher() {
-        super();
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Masukkan mata pelajaran: ");
-        this.subject = scanner.nextLine();
+    public Teacher(String name, int age, String subject) {
+        super(name, age);
+        this.subject = subject;
     }
 
     @Override
