@@ -14,16 +14,31 @@ class Course {
         }
     }
 
-    // long method: karena set course, set teacher dsb
-    // bisa juga long parameter list karena parameternya sangat banyak
-    public void setCourse(String courseName, boolean isLabCourse, String teacherName, int teacherAge, String teacherSubject) {
+/*************  ✨ Codeium Command ⭐  *************/
+/**
+ * Set the course name.
+ *
+ * @param courseName the name of the course
+ */
+/******  97ba66a1-095f-401c-a4c9-a1a509a48b7a  *******/
+    public void setCourseName(String courseName) {
         this.courseName = courseName;
-        this.teacher = new Teacher(teacherName, teacherAge, teacherSubject);
-        this.isLabCourse = isLabCourse;
+    }
 
-        System.out.println("Course ini bernama: " + courseName);
-        System.out.println("Course ini diajar oleh: " + teacher.name);
-        System.out.println("Apakah diajar di lab? " + (isLabCourse ? "Ya" : "Tidak"));
+    public void setIsLabCourse(boolean isLabCourse) {
+        this.isLabCourse = isLabCourse;
+    }
+
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public boolean getIsLabCourse() {
+        return isLabCourse;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
     }
 
     public void displayCourseInfo() {

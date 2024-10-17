@@ -1,14 +1,9 @@
 
 class Student extends Person {
     private String major;
-    // data clumps
-    private String phone;
-    private String email;
-    private String height;
-    private String weight;
 
-    public Student(String name, int age, String major) {
-        super(name, age);
+    public Student(String name, int age, String phone, String email, int height, int weight, String major) {
+        super(name, age, phone, email, height, weight);
         this.major = major;
     }
 

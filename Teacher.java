@@ -1,14 +1,9 @@
 
 class Teacher extends Person {
     private String subject;
-    // data clumps
-    private String phone;
-    private String email;
-    private String height;
-    private String weight;
 
-    public Teacher(String name, int age, String subject) {
-        super(name, age);
+    public Teacher(String name, int age, String phone, String email, int height, int weight, String subject) {
+        super(name, age, phone, email, height, weight);
         this.subject = subject;
     }
 
